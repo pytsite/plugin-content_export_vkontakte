@@ -1,0 +1,20 @@
+{
+  "description": {
+    "en": "Vkontakte Content Export",
+    "ru": "Экспорт контента во Вконтакте",
+    "uk": "Експорт контенту до Вконтактє"
+  },
+  "url": "https://github.com/pytsite/plugin-content_export_vkontakte",
+  "author": {
+    "name": "Alexander Shepetko",
+    "email": "a@shepetko.com",
+    "url": "https://shepetko.com"
+  },
+  "requires": {
+    "packages": [],
+    "plugins": [
+      "content_export",
+      "vkontakte"
+    ]
+  }
+}
