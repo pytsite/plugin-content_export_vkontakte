@@ -1,9 +1,9 @@
-"""PytSite Vkontakte Content Export Driver.
+"""PytSite Vkontakte Content Export Plugin Driver
 """
 from frozendict import frozendict as _frozendict
 import re as _re
-from pytsite import logger as _logger, widget as _widget
-from plugins import content_export as _content_export, content as _content, vkontakte as _vkontakte
+from pytsite import logger as _logger
+from plugins import content_export as _content_export, content as _content, vkontakte as _vkontakte, widget as _widget
 
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'

@@ -1,6 +1,6 @@
 {
-  "name": "plugins.content_export_vkontakte",
-  "version": "0.1.2",
+  "name": "content_export_vkontakte",
+  "version": "1.0",
   "description": {
     "en": "Vkontakte Content Export",
     "ru": "Экспорт контента во Вконтакте",
@@ -15,8 +15,10 @@
   "requires": {
     "packages": [],
     "plugins": [
+      "content",
       "content_export",
-      "vkontakte"
+      "vkontakte",
+      "widget"
     ]
   }
 }

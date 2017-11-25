@@ -1,4 +1,4 @@
-"""
+"""PytSite Vkontakte Content Export Plugin Event Handlers
 """
 from plugins import content_export as _content_export
 from plugins import vkontakte

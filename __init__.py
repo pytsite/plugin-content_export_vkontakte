@@ -1,4 +1,4 @@
-"""PytSite Vkontakte Content Export Driver
+"""PytSite Vkontakte Content Export Plugin
 """
 
 __author__ = 'Alexander Shepetko'
@@ -12,12 +12,12 @@ def _init():
     from . import _driver, _eh
 
     # Resources
-    lang.register_package(__name__, alias='content_export_vkontakte')
+    lang.register_package(__name__)
 
     # Register content export driver
     content_export.register_driver(_driver.Driver())
 
-    events.listen('pytsite.odm.entity.pre_save.content_export', _eh.odm_entity_pre_save_content_export)
+    events.listen('odm.entity.pre_save.content_export', _eh.odm_entity_pre_save_content_export)
 
 
 _init()
