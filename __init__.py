@@ -6,7 +6,7 @@ __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
 
 
-def _init():
+def plugin_load():
     from pytsite import lang, events
     from plugins import content_export
     from . import _driver, _eh
@@ -17,7 +17,4 @@ def _init():
     # Register content export driver
     content_export.register_driver(_driver.Driver())
 
-    events.listen('odm.entity.pre_save.content_export', _eh.odm_entity_pre_save_content_export)
-
-
-_init()
+    events.listen('odm@entity.pre_save.content_export', _eh.odm_entity_pre_save_content_export)
