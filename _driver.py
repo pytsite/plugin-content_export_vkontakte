@@ -1,13 +1,14 @@
 """PytSite Vkontakte Content Export Plugin Driver
 """
-from frozendict import frozendict as _frozendict
-import re as _re
-from pytsite import logger as _logger
-from plugins import content_export as _content_export, content as _content, vkontakte as _vkontakte, widget as _widget
 
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
+
+from frozendict import frozendict as _frozendict
+import re as _re
+from pytsite import logger as _logger
+from plugins import content_export as _content_export, content as _content, vkontakte as _vkontakte, widget as _widget
 
 _re_access_token = _re.compile('access_token=([0-9a-f]+)')
 _re_user_id = _re.compile('user_id=(\d+)')

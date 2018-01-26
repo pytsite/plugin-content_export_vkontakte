@@ -1,11 +1,12 @@
 """PytSite Vkontakte Content Export Plugin Event Handlers
 """
-from plugins import content_export as _content_export
-from plugins import vkontakte
 
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
+
+from plugins import content_export as _content_export
+from plugins import vkontakte
 
 
 def odm_entity_pre_save_content_export(entity: _content_export.model.ContentExport):
